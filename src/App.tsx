@@ -30,7 +30,7 @@ function App() {
           </p>
           <div className="flex flex-col items-center justify-center">
             <p className="italic text-sm">foto meramente ilustrativa</p>
-            <img src="/src/assets/teclado.png" alt="premio concurso" className="h-[500px]" />
+            <img src="/teclado.png" alt="premio concurso" className="h-[500px]" />
           </div>
           <h3 className="text-2xl mb-3">Inscrições:</h3>
           <p className="mb-6">
