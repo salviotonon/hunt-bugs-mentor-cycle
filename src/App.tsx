@@ -11,7 +11,7 @@ function App() {
 
   return (
     <>
-      <header className="min-h-[100vh] bg-hero-pattern bg-cover flex justify-center items-end relativ">
+      <header className="min-h-[90vh] sm:min-h-[100vh] bg-hero-pattern-mobile sm:bg-hero-pattern bg-contain sm:bg-cover flex justify-center bg-center bg-no-repeat bg-newBlack relative">
         <button
           className={`${effect && "animate-wiggle"
             } text-white font-bold bg-red-500 px-20 py-6 rounded flex items-center absolute bottom-[-20px] hover:shadow-xl border border-white`}
@@ -22,7 +22,7 @@ function App() {
         </button>
       </header>
       <main className="min-h-screen pb-10" id="main-content">
-        <section className="max-w-6xl m-auto py-10 mt-20">
+        <section className="max-w-6xl m-auto py-10 mt-20 px-4">
           <h2 className="text-4xl text-center mb-6 font-bold">Regras do Concurso</h2>
           <h3 className="text-2xl mb-3">Introdução:</h3>
           <p className="mb-6">
@@ -44,37 +44,39 @@ function App() {
           <p className="mb-6">
             Os bugs serão divididos em diferentes categorias, de acordo com seu grau de severidade e impacto no projeto. Cada categoria terá uma pontuação específica atribuída a ela, conforme apresentado na tabela abaixo:
           </p>
-          <table className="min-w-full table-auto mb-6 border border-gray-600 mt-10 shadow-sm">
-            <thead className="border border-gray-600">
-              <tr className="border border-gray-600">
-                <th className="px-6 py-3 text-left text-base font-bold text-gray-500 uppercase tracking-wider">Categoria</th>
-                <th className="px-6 py-3 text-left text-base font-bold text-gray-500 uppercase tracking-wider">Descrição</th>
-                <th className="px-6 py-3 text-left text-base font-bold text-gray-500 uppercase tracking-wider">Pontuação</th>
-              </tr>
-            </thead>
-            <tbody className="bg-white divide-y divide-gray-200">
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap">Bugs críticos</td>
-                <td className="px-6 py-4">Problemas graves que afetam a funcionalidade central do projeto e impedem seu uso adequado.</td>
-                <td className="px-6 py-4">10 pontos</td>
-              </tr>
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap">Bugs de funcionalidade</td>
-                <td className="px-6 py-4">Problemas que afetam determinadas funcionalidades do projeto, mas não impedem seu uso geral.</td>
-                <td className="px-6 py-4">7 pontos</td>
-              </tr>
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap">Bugs de interface</td>
-                <td className="px-6 py-4">Problemas relacionados ao design e layout da plataforma, incluindo elementos visuais que não funcionam corretamente.</td>
-                <td className="px-6 py-4">5 pontos</td>
-              </tr>
-              <tr>
-                <td className="px-6 py-4 whitespace-nowrap">Bugs menores ou melhorias</td>
-                <td className="px-6 py-4">Problemas de menor impacto, como erros de digitação, mensagens de erro incorretas ou sugestões de melhorias na usabilidade.</td>
-                <td className="px-6 py-4">3 pontos</td>
-              </tr>
-            </tbody>
-          </table>
+          <div className="mb-6  mt-10 shadow-sm overflow-x-auto">
+            <table className="mb-6 border border-gray-600 mt-10 shadow-sm overflow-scroll">
+              <thead className="border border-gray-600">
+                <tr className="border border-gray-600">
+                  <th className="px-6 py-3 text-left text-base font-bold text-gray-500 uppercase tracking-wider">Categoria</th>
+                  <th className="px-6 py-3 text-left text-base font-bold text-gray-500 uppercase tracking-wider">Descrição</th>
+                  <th className="px-6 py-3 text-left text-base font-bold text-gray-500 uppercase tracking-wider">Pontuação</th>
+                </tr>
+              </thead>
+              <tbody className="bg-white divide-y divide-gray-200">
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap">Bugs críticos</td>
+                  <td className="px-6 py-4">Problemas graves que afetam a funcionalidade central do projeto e impedem seu uso adequado.</td>
+                  <td className="px-6 py-4">10 pontos</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap">Bugs de funcionalidade</td>
+                  <td className="px-6 py-4">Problemas que afetam determinadas funcionalidades do projeto, mas não impedem seu uso geral.</td>
+                  <td className="px-6 py-4">7 pontos</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap">Bugs de interface</td>
+                  <td className="px-6 py-4">Problemas relacionados ao design e layout da plataforma, incluindo elementos visuais que não funcionam corretamente.</td>
+                  <td className="px-6 py-4">5 pontos</td>
+                </tr>
+                <tr>
+                  <td className="px-6 py-4 whitespace-nowrap">Bugs menores ou melhorias</td>
+                  <td className="px-6 py-4">Problemas de menor impacto, como erros de digitação, mensagens de erro incorretas ou sugestões de melhorias na usabilidade.</td>
+                  <td className="px-6 py-4">3 pontos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
           <h3 className="text-2xl mb-3">Avaliação e seleção do vencedor:</h3>
           <p className="mb-6">
             A equipe do projeto Mentor Cycle analisará todas as issues reportadas e atribuirá pontos aos participantes de acordo com a categoria do bug e sua severidade. O vencedor será o participante que acumular mais pontos durante o período do concurso.
@@ -97,7 +99,7 @@ function App() {
         </section>
       </main>
       <footer className="flex justify-center items-start min-h-[55vh] py-10">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbvDJ7XA7EhGWszoncuFnGs1XsXXrGGgVLpkQdhCwMQfhU_Q/viewform?embedded=true" className="text-2xl text-white font-bold bg-red-500 px-28 py-8 rounded-lg hover:bg-red-800">Inscreva-se</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbvDJ7XA7EhGWszoncuFnGs1XsXXrGGgVLpkQdhCwMQfhU_Q/viewform?embedded=true" className="text-lg text-white font-bold bg-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-red-800 max-w-xs">Inscreva-se</a>
       </footer>
     </>
   )
