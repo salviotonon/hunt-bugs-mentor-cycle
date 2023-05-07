@@ -98,8 +98,10 @@ function App() {
 
         </section>
       </main>
-      <footer className="flex justify-center items-start min-h-[55vh] py-10">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbvDJ7XA7EhGWszoncuFnGs1XsXXrGGgVLpkQdhCwMQfhU_Q/viewform?embedded=true" className="text-lg text-white font-bold bg-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-red-800 max-w-xs">Inscreva-se</a>
+      <footer className="flex flex-col justify-center items-center gap-20 min-h-[55vh] py-10">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbvDJ7XA7EhGWszoncuFnGs1XsXXrGGgVLpkQdhCwMQfhU_Q/viewform?embedded=true" className="bg-red-500 text-white text-lg font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-white hover:text-red-500 transition-all duration-500 max-w-xs">Inscreva-se</a>
+        <a href="https://mentor-cycle-fe-dev.up.railway.app/" className="text-lg text-red-500 font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-red-500 hover:text-white transition-all duration-500 max-w-xs">Conheça a Mentor Cycle</a>
+        <a href="https://uxdavidareal.notion.site/Mentor-Cycle-ff5e6e73778d40d690d57aeac24d8cb5" className="text-lg text-red-500 font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-red-500 hover:text-white transition-all duration-500 max-w-xs">Notion Mentor Cycle</a>
       </footer>
     </>
   )
