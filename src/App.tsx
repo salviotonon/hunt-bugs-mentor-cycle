@@ -34,7 +34,7 @@ function App() {
           </div>
           <h3 className="text-2xl mb-3">Inscrições:</h3>
           <p className="mb-6">
-            As inscrições podem ser feitas a qualquer momento durante o período do concurso. Para se inscrever, basta estar atento ao início do concurso, que ocorrerá assim que o deploy do projeto for finalizado e o software estiver online.
+            As inscrições começam no dia 8 de maio de 2023 e podem ser feitas a qualquer momento durante o período do concurso, que se estende até o dia 31 de maio de 2023, encerrando às 23:59 (horário de Brasília). Fique atento ao início do concurso e não perca a oportunidade de se inscrever e participar assim que o projeto for implantado e o software estiver disponível online.
           </p>
           <h3 className="text-2xl mb-3">Submissão de bugs:</h3>
           <p className="mb-6">
