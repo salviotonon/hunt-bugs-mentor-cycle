@@ -41,7 +41,7 @@ function App() {
           </p>
           <h3 className="text-2xl mb-3">Submissão de bugs:</h3>
           <p className="mb-6">
-            Os participantes deverão reportar os bugs encontrados por meio de uma issue no <a href="https://github.com/Mentor-Cycle" className="text-blue-800 hover:text-blue-500">repositório do projeto no GitHub</a>. A issue deve conter uma descrição detalhada do bug, incluindo informações sobre como reproduzi-lo, capturas de tela, se aplicável.
+            Os participantes deverão reportar os bugs encontrados por meio de uma issue no <a href="https://github.com/Mentor-Cycle/mentor-cycle-fe" className="text-blue-800 hover:text-blue-500">repositório do projeto no GitHub</a>. A issue deve conter uma descrição detalhada do bug, incluindo informações sobre como reproduzi-lo, capturas de tela, se aplicável.
           </p>
           <h3 className="text-2xl mb-3">Categorias de bugs e pontuação:</h3>
           <p className="mb-6">
