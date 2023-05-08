@@ -23,6 +23,9 @@ function App() {
       </header>
       <main className="min-h-screen pb-10" id="main-content">
         <section className="max-w-6xl m-auto py-10 mt-20 px-4">
+          <div className=" h-40 flex justify-center items-center">
+            <a href="https://mentor-cycle-fe-dev.up.railway.app/" target="_blank" className="text-lg text-red-500 font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-red-500 hover:text-white transition-all duration-500 max-w-xs">{`>> Site da Mentor Cycle <<`}</a>
+          </div>
           <h2 className="text-4xl text-center mb-6 font-bold">Regras do Concurso</h2>
           <h3 className="text-2xl mb-3">Introdução:</h3>
           <p className="mb-6">
@@ -99,9 +102,9 @@ function App() {
         </section>
       </main>
       <footer className="flex flex-col justify-center items-center gap-20 min-h-[55vh] py-10">
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdbvDJ7XA7EhGWszoncuFnGs1XsXXrGGgVLpkQdhCwMQfhU_Q/viewform?embedded=true" className="bg-red-500 text-white text-lg font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-white hover:text-red-500 transition-all duration-500 max-w-xs">Inscreva-se</a>
-        <a href="https://mentor-cycle-fe-dev.up.railway.app/" className="text-lg text-red-500 font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-red-500 hover:text-white transition-all duration-500 max-w-xs">Conheça a Mentor Cycle</a>
-        <a href="https://uxdavidareal.notion.site/Mentor-Cycle-ff5e6e73778d40d690d57aeac24d8cb5" className="text-lg text-red-500 font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-red-500 hover:text-white transition-all duration-500 max-w-xs">Notion Mentor Cycle</a>
+        <a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdbvDJ7XA7EhGWszoncuFnGs1XsXXrGGgVLpkQdhCwMQfhU_Q/viewform?embedded=true" className="bg-red-500 text-white text-lg font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-white hover:text-red-500 transition-all duration-500 max-w-xs">Inscreva-se</a>
+        <a target="_blank" href="https://medium.com/@flaviafoiatoux/a-ca%C3%A7a-aos-bugs-mentor-cycle-f520b0c810b2" className="text-lg text-red-500 font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-red-500 hover:text-white transition-all duration-500 max-w-xs">Como reportar um bug</a>
+        <a target="_blank" href="https://uxdavidareal.notion.site/Mentor-Cycle-ff5e6e73778d40d690d57aeac24d8cb5" className="text-lg text-red-500 font-bold border-2 border-red-500 w-[250px] text-center py-8 rounded-lg hover:bg-red-500 hover:text-white transition-all duration-500 max-w-xs">Notion Mentor Cycle</a>
       </footer>
     </>
   )
